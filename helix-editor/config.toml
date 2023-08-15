@@ -1,0 +1,35 @@
+theme = "papercolor-dark"
+
+[editor]
+mouse = true
+middle-click-paste = true
+line-number = "absolute"
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff", "spacer"]
+auto-completion = true
+completion-replace = true
+true-color = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+center = ["version-control"]
+right = ["diagnostics", "selections", "position", "total-line-numbers"]
+separator = "|"
+
+[editor.lsp]
+enable = true
+display-messages = true
+auto-signature-help = true
+display-signature-help-docs = true
+goto-reference-include-declaration = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "▏"
